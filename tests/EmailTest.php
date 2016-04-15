@@ -1,22 +1,22 @@
 <?php
 /**
- * mithra62 - Unit Test
+ * Jaeger
  *
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/tests/EmailTest.php
+ * @filesource 	./Email.php
  */
 namespace JaegerApp\tests;
 
 use JaegerApp\Email;
 
 /**
- * mithra62 - Email object Unit Tests
+ * Jaeger - Email object Unit Tests
  *
  * Contains all the unit tests for the \mithra62\Email object
  *
- * @package mithra62\Tests
+ * @package Jaeger\Tests
  * @author Eric Lamb <eric@mithra62.com>
  */
 class EmailTest extends \PHPUnit_Framework_TestCase
