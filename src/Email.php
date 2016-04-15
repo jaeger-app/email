@@ -1,19 +1,18 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
- * @author		Eric Lamb <eric@mithra62.com>
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Email.php
+ * @filesource 	./Email.php
  */
-namespace mithra62;
+namespace JaegerApp;
 
-use mithra62\Exceptions\EmailException;
+use JaegerApp\Exceptions\EmailException;
 
 /**
- * mithra62 - Email Object
+ * Jaeger - Email Object
  *
  * Wrapper to send email
  *
@@ -64,14 +63,14 @@ class Email
     /**
      * The View object
      * 
-     * @var \mithra62\View
+     * @var \JaegerApp\View
      */
     protected $view = null;
 
     /**
      * The Language object
      * 
-     * @var \mithra62\Language
+     * @var \JaegerApp\Language
      */
     protected $lang = null;
 
@@ -137,10 +136,10 @@ class Email
     /**
      * Sets the Language object
      * 
-     * @param \mithra62\Language $lang            
-     * @return \mithra62\Email
+     * @param \JaegerApp\Language $lang            
+     * @return \JaegerApp\Email
      */
-    public function setLang(\mithra62\Language $lang)
+    public function setLang(\JaegerApp\Language $lang)
     {
         $this->lang = $lang;
         return $this;
@@ -149,7 +148,7 @@ class Email
     /**
      * Returns an instance of the Language object
      * 
-     * @return \mithra62\Language
+     * @return \JaegerApp\Language
      */
     public function getLang()
     {
@@ -159,10 +158,10 @@ class Email
     /**
      * Sets the View object
      * 
-     * @param \mithra62\View $view            
-     * @return \mithra62\Email
+     * @param \JaegerApp\View $view            
+     * @return \JaegerApp\Email
      */
-    public function setView(\mithra62\View $view)
+    public function setView(\JaegerApp\View $view)
     {
         $this->view = $view;
         return $this;
@@ -171,7 +170,7 @@ class Email
     /**
      * Returns an instance of the View object
      * 
-     * @return \mithra62\View
+     * @return \JaegerApp\View
      */
     public function getView()
     {
@@ -182,7 +181,7 @@ class Email
      * Sets the email config
      * 
      * @param array $config            
-     * @return \mithra62\Email
+     * @return \JaegerApp\Email
      */
     public function setConfig(array $config)
     {
@@ -195,7 +194,7 @@ class Email
      * 
      * @param string $template            
      * @param array $view_data            
-     * @return \mithra62\Email
+     * @return \JaegerApp\Email
      */
     public function setViewOptions($template, array $view_data = array())
     {
@@ -210,7 +209,7 @@ class Email
      * Note that this method resets any previously added email addresses
      * 
      * @param string $to            
-     * @return \mithra62\Email
+     * @return \JaegerApp\Email
      */
     public function setTo($to)
     {
@@ -225,7 +224,7 @@ class Email
      * 
      * @param string $to
      *            The Email address to send to
-     * @return \mithra62\Email
+     * @return \JaegerApp\Email
      */
     public function addTo($to)
     {
@@ -305,7 +304,7 @@ class Email
      * 
      * @param string $message
      *            Should be a language file key
-     * @return \mithra62\Email
+     * @return \JaegerApp\Email
      */
     public function setMessage($message)
     {
@@ -327,7 +326,7 @@ class Email
      * Sets the mailtype
      * 
      * @param string $mailtype            
-     * @return \mithra62\Email
+     * @return \JaegerApp\Email
      */
     public function setMailtype($mailtype)
     {
@@ -366,7 +365,7 @@ class Email
     /**
      * Resets the email object
      * 
-     * @return \mithra62\Email
+     * @return \JaegerApp\Email
      */
     public function clear()
     {

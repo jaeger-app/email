@@ -1,6 +1,22 @@
 <?php
+/**
+ * Jaeger
+ *
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
+ * @version		1.0
+ * @filesource 	./Email/Swift3.php
+ */
 namespace mithra62\Email;
 
+/**
+ * Jaeger - Swift3 Email Abstraction
+ *
+ * Defines what email objects should contain
+ *
+ * @package Email
+ * @author Eric Lamb <eric@mithra62.com>
+ */
 class Swift3 extends SwiftAbstract
 {
     public function __construct($config = array())

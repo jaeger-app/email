@@ -1,5 +1,13 @@
 <?php
-namespace mithra62\Email;
+/**
+ * Jaeger
+ *
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
+ * @version		1.0
+ * @filesource 	./Email/Swift5.php
+ */
+namespace JaegerApp\Email;
 
 use Swift_SmtpTransport;
 use Swift_MailTransport;
@@ -9,6 +17,14 @@ use Swift_Mailer;
 use Swift_Plugins_Loggers_ArrayLogger;
 use Swift_Plugins_LoggerPlugin;
 
+/**
+ * Jaeger - Swift5 Email Abstraction
+ *
+ * Defines what email objects should contain
+ *
+ * @package Email
+ * @author Eric Lamb <eric@mithra62.com>
+ */
 class Swift5 extends SwiftAbstract
 {
     /**
@@ -25,7 +41,7 @@ class Swift5 extends SwiftAbstract
     
     /**
      * (non-PHPdoc)
-     * @see \mithra62\Email\SwiftAbstract::getMailer()
+     * @see \JaegerApp\Email\SwiftAbstract::getMailer()
      */
     public function getMailer()
     {
@@ -49,7 +65,7 @@ class Swift5 extends SwiftAbstract
     
     /**
      * (non-PHPdoc)
-     * @see \mithra62\Email\SwiftAbstract::getMessage()
+     * @see \JaegerApp\Email\SwiftAbstract::getMessage()
      */
     public function getMessage(array $to, $from_email, $from_name, $subject, $message_body, array $attachments, $mail_type='html')
     {

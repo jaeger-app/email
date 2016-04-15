@@ -1,20 +1,18 @@
 <?php
 /**
- * mithra62
+ * Jaeger
  *
- * @author		Eric Lamb <eric@mithra62.com>
- * @copyright	Copyright (c) 2015, mithra62, Eric Lamb.
- * @link		http://mithra62.com/
+ * @copyright	Copyright (c) 2015-2016, mithra62
+ * @link		http://jaeger-app.com
  * @version		1.0
- * @filesource 	./mithra62/Email/SwiftAbstract.php
+ * @filesource 	./Email/SwiftAbstract.php
  */
- 
-namespace mithra62\Email;
+namespace JaegerApp\Email;
 
 /**
- * mithra62 - Email Object
+ * Jaeger - Email Abstract
  *
- * Wrapper to send email
+ * Defines what email objects should contain
  *
  * @package Email
  * @author Eric Lamb <eric@mithra62.com>
