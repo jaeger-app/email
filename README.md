@@ -25,6 +25,7 @@ $vars = array('variable1' => 'Variable1');
 $email->setSubject($subject)
 	->setMessage($message_template)
 	->setTo($emails)
+	->addAttachment($file)
 	->setMailtype('html');
 $email->send($vars);
 ```
