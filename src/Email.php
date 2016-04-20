@@ -380,6 +380,7 @@ class Email
      * 
      * @param array $vars            
      * @throws \InvalidArgumentException
+     * @throws \InvalidArgumentException
      * @throws EmailException
      */
     public function send(array $vars = array())
@@ -413,8 +414,6 @@ class Email
         $message = $mailer->getMessage($valid_emails, $this->config['from_email'], $this->config['sender_name'], $subject, $body_message, $this->getAttachments(), $this->getMailtype());
         
         if (! $mailer->send($message)) {
-            print_r($mailer->getMailer()->mailer_logger->dump());
-            exit();
             throw new EmailException($this->getMailer()->ErrorInfo);
         }
         
