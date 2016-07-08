@@ -35,7 +35,7 @@ class Swift5 extends SwiftAbstract
     {
         $this->config = $config;
         if( !class_exists('\Swift_Mailer') ) {
-            require_once dirname(__FILE__).'../../../vendor/swiftmailer/swiftmailer/lib/swift_required.php';
+            //require_once dirname(__FILE__).'../../../vendor/swiftmailer/swiftmailer/lib/swift_required.php';
         }
     }
     
